@@ -1,0 +1,197 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1221675B-67DB-4B36-A39A-E25E1EE3E3D3}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Website</RootNamespace>
+    <AssemblyName>Website</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44308</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="LOGIN.aspx" />
+    <Content Include="REGISTRATION.aspx" />
+    <Content Include="SRC\css\bootstrap.min.css" />
+    <Content Include="SRC\css\font-awesome.css" />
+    <Content Include="SRC\css\font.css" />
+    <Content Include="SRC\css\jqvmap.css" />
+    <Content Include="SRC\css\lightbox.css" />
+    <Content Include="SRC\css\minimal.css" />
+    <Content Include="SRC\css\monthly.css" />
+    <Content Include="SRC\css\morris.css" />
+    <Content Include="SRC\css\style-responsive.css" />
+    <Content Include="SRC\css\style.css" />
+    <Content Include="SRC\fonts\fontawesome-webfont.svg" />
+    <Content Include="SRC\images\1.png" />
+    <Content Include="SRC\images\2.png" />
+    <Content Include="SRC\images\3.png" />
+    <Content Include="SRC\images\bg.jpg" />
+    <Content Include="SRC\images\close.png" />
+    <Content Include="SRC\images\g1.jpg" />
+    <Content Include="SRC\images\g2.jpg" />
+    <Content Include="SRC\images\g3.jpg" />
+    <Content Include="SRC\images\g4.jpg" />
+    <Content Include="SRC\images\g5.jpg" />
+    <Content Include="SRC\images\g6.jpg" />
+    <Content Include="SRC\images\g7.jpg" />
+    <Content Include="SRC\images\g8.jpg" />
+    <Content Include="SRC\images\g9.jpg" />
+    <Content Include="SRC\images\mail.png" />
+    <Content Include="SRC\images\minimal.png" />
+    <Content Include="SRC\images\nav-expand.png" />
+    <Content Include="SRC\images\next.png" />
+    <Content Include="SRC\images\pass.png" />
+    <Content Include="SRC\images\prev.png" />
+    <Content Include="SRC\images\search-icon.png" />
+    <Content Include="SRC\js\bootstrap.js" />
+    <Content Include="SRC\js\jquery.dcjqaccordion.2.7.js" />
+    <Content Include="SRC\js\jquery.fileupload.js" />
+    <Content Include="SRC\js\jquery.min.js" />
+    <Content Include="SRC\js\jquery.nicescroll.js" />
+    <Content Include="SRC\js\jquery.scrollTo.js" />
+    <Content Include="SRC\js\jquery.slimscroll.js" />
+    <Content Include="SRC\js\jquery.vmap.asia.js" />
+    <Content Include="SRC\js\jquery.vmap.australia.js" />
+    <Content Include="SRC\js\jquery.vmap.europe.js" />
+    <Content Include="SRC\js\jquery.vmap.js" />
+    <Content Include="SRC\js\jquery.vmap.sampledata.js" />
+    <Content Include="SRC\js\jquery.vmap.world.js" />
+    <Content Include="SRC\js\jquery2.0.3.min.js" />
+    <Content Include="SRC\js\lightbox-plus-jquery.min.js" />
+    <Content Include="SRC\js\monthly.js" />
+    <Content Include="SRC\js\morris.js" />
+    <Content Include="SRC\js\raphael-min.js" />
+    <Content Include="SRC\js\script.js" />
+    <Content Include="SRC\js\scripts.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="LOGIN.aspx.cs">
+      <DependentUpon>LOGIN.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LOGIN.aspx.designer.cs">
+      <DependentUpon>LOGIN.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="REGISTRATION.aspx.cs">
+      <DependentUpon>REGISTRATION.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="REGISTRATION.aspx.designer.cs">
+      <DependentUpon>REGISTRATION.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <Content Include="SRC\fonts\fontawesome-webfont.eot" />
+    <Content Include="SRC\fonts\fontawesome-webfont.ttf" />
+    <Content Include="SRC\fonts\fontawesome-webfont.woff" />
+    <Content Include="SRC\fonts\fontawesome-webfont.woff2" />
+    <Content Include="SRC\fonts\FontAwesome.otf" />
+    <Content Include="SRC\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="SRC\fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>61111</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44308/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
