@@ -39,7 +39,7 @@
                 <h6><a href="#">Forgot Password?</a></h6>
 				
                 <div class="clearfix"></div>
-                    <asp:Button ID="Button1" runat="server" Text="Sign in" type="submit" value="Sign In" />
+                    <asp:Button ID="Button1" runat="server" Text="Sign in" type="submit" value="Sign In" OnClick="Button1_Click" />
         <p>Don't Have an Account ?<asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/REGISTRATION.aspx">Create an account</asp:HyperLink></p>
             </form>
     </div>

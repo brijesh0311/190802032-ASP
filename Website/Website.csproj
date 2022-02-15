@@ -71,6 +71,7 @@
     <Content Include="App_Data\Database1_log.ldf">
       <DependentUpon>Database1.mdf</DependentUpon>
     </Content>
+    <Content Include="DASHBOARD.aspx" />
     <Content Include="LOGIN.aspx" />
     <Content Include="REGISTRATION.aspx" />
     <Content Include="SRC\css\bootstrap.min.css" />
@@ -128,6 +129,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DASHBOARD.aspx.cs">
+      <DependentUpon>DASHBOARD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DASHBOARD.aspx.designer.cs">
+      <DependentUpon>DASHBOARD.aspx</DependentUpon>
+    </Compile>
     <Compile Include="LOGIN.aspx.cs">
       <DependentUpon>LOGIN.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
