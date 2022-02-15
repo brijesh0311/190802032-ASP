@@ -28,8 +28,9 @@
 
     <div class="reg-w3">
     <div class="w3layouts-main">
-	    <h2>Register Now</h2>
 		    <form id="form2" runat="server">
+			    
+	    <h2>Register Now</h2>
 			    
                 <asp:TextBox ID="TextBox1" runat="server" type="text" class="ggg" name="Name" placeholder="NAME" required=""></asp:TextBox>
 
@@ -41,13 +42,13 @@
 
 			    
                 <asp:TextBox ID="TextBox4" runat="server" type="password" class="ggg" name="Password" placeholder="PASSWORD" required=""></asp:TextBox>
-
+                <asp:TextBox ID="TextBox5" runat="server" type="password" class="ggg" name="Confirm Password" placeholder="CONFIRM PASSWORD" required=""></asp:TextBox>
 			    <h4><input type="checkbox" />I agree to the Terms of Service and Privacy Policy</h4>
 			
 				    <div class="clearfix"></div>
 
 				    
-                    <asp:Button ID="Button1" runat="server" Text="Submit" type="submit" name="register" />
+                    <asp:Button ID="Button1" runat="server" Text="Submit" type="submit" name="register" OnClick="Button1_Click" />
 
 		    </form>
 		    <p>Already Registered.<asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/LOGIN.aspx">Login</asp:HyperLink></p>
