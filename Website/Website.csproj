@@ -129,6 +129,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminPage.Master.cs">
+      <DependentUpon>AdminPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPage.Master.designer.cs">
+      <DependentUpon>AdminPage.Master</DependentUpon>
+    </Compile>
     <Compile Include="DASHBOARD.aspx.cs">
       <DependentUpon>DASHBOARD.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -153,6 +160,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AdminPage.Master" />
     <None Include="packages.config" />
     <Content Include="SRC\fonts\fontawesome-webfont.eot" />
     <Content Include="SRC\fonts\fontawesome-webfont.ttf" />
