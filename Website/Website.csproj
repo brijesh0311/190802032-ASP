@@ -71,9 +71,44 @@
     <Content Include="App_Data\Database1_log.ldf">
       <DependentUpon>Database1.mdf</DependentUpon>
     </Content>
-    <Content Include="DASHBOARD.aspx" />
     <Content Include="LOGIN.aspx" />
     <Content Include="REGISTRATION.aspx" />
+    <Content Include="SRC\assets\css\style-starter.css" />
+    <Content Include="SRC\assets\images\about1.jpg" />
+    <Content Include="SRC\assets\images\about2.jpg" />
+    <Content Include="SRC\assets\images\about3.jpg" />
+    <Content Include="SRC\assets\images\about4.jpg" />
+    <Content Include="SRC\assets\images\banner.jpg" />
+    <Content Include="SRC\assets\images\bg1.jpg" />
+    <Content Include="SRC\assets\images\img1.jpg" />
+    <Content Include="SRC\assets\images\img2.jpg" />
+    <Content Include="SRC\assets\images\inner-banner.jpg" />
+    <Content Include="SRC\assets\images\map.png" />
+    <Content Include="SRC\assets\images\p1.jpg" />
+    <Content Include="SRC\assets\images\p2.jpg" />
+    <Content Include="SRC\assets\images\p3.jpg" />
+    <Content Include="SRC\assets\images\p4.jpg" />
+    <Content Include="SRC\assets\images\p5.jpg" />
+    <Content Include="SRC\assets\images\p6.jpg" />
+    <Content Include="SRC\assets\images\team1.jpg" />
+    <Content Include="SRC\assets\images\team2.jpg" />
+    <Content Include="SRC\assets\images\team3.jpg" />
+    <Content Include="SRC\assets\images\team4.jpg" />
+    <Content Include="SRC\assets\images\testi1.jpg" />
+    <Content Include="SRC\assets\images\testi2.jpg" />
+    <Content Include="SRC\assets\images\testi3.jpg" />
+    <Content Include="SRC\assets\images\testi4.jpg" />
+    <Content Include="SRC\assets\images\testi5.jpg" />
+    <Content Include="SRC\assets\images\testi6.jpg" />
+    <Content Include="SRC\assets\images\testi7.jpg" />
+    <Content Include="SRC\assets\js\bootstrap.min.js" />
+    <Content Include="SRC\assets\js\counter.js" />
+    <Content Include="SRC\assets\js\jquery-3.3.1.min.js" />
+    <Content Include="SRC\assets\js\jquery.magnific-popup.min.js" />
+    <Content Include="SRC\assets\js\theme-change.js" />
+    <Content Include="SRC\assets\webfonts\fa-brands-400.svg" />
+    <Content Include="SRC\assets\webfonts\fa-regular-400.svg" />
+    <Content Include="SRC\assets\webfonts\fa-solid-900.svg" />
     <Content Include="SRC\css\bootstrap.min.css" />
     <Content Include="SRC\css\font-awesome.css" />
     <Content Include="SRC\css\font.css" />
@@ -128,6 +163,10 @@
     <Content Include="SRC\js\scripts.js" />
     <Content Include="Web.config" />
     <Content Include="index_A.aspx" />
+    <Content Include="Home_C.aspx" />
+    <Content Include="Contact_Us_C.aspx" />
+    <Content Include="About_Us_C.aspx" />
+    <Content Include="Services_C.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AdminPage.Master.cs">
@@ -137,12 +176,12 @@
     <Compile Include="AdminPage.Master.designer.cs">
       <DependentUpon>AdminPage.Master</DependentUpon>
     </Compile>
-    <Compile Include="DASHBOARD.aspx.cs">
-      <DependentUpon>DASHBOARD.aspx</DependentUpon>
+    <Compile Include="ClientMaster.Master.cs">
+      <DependentUpon>ClientMaster.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="DASHBOARD.aspx.designer.cs">
-      <DependentUpon>DASHBOARD.aspx</DependentUpon>
+    <Compile Include="ClientMaster.Master.designer.cs">
+      <DependentUpon>ClientMaster.Master</DependentUpon>
     </Compile>
     <Compile Include="LOGIN.aspx.cs">
       <DependentUpon>LOGIN.aspx</DependentUpon>
@@ -166,9 +205,38 @@
     <Compile Include="index_A.aspx.designer.cs">
       <DependentUpon>index_A.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Home_C.aspx.cs">
+      <DependentUpon>Home_C.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home_C.aspx.designer.cs">
+      <DependentUpon>Home_C.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contact_Us_C.aspx.cs">
+      <DependentUpon>Contact_Us_C.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact_Us_C.aspx.designer.cs">
+      <DependentUpon>Contact_Us_C.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="About_Us_C.aspx.cs">
+      <DependentUpon>About_Us_C.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About_Us_C.aspx.designer.cs">
+      <DependentUpon>About_Us_C.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services_C.aspx.cs">
+      <DependentUpon>Services_C.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Services_C.aspx.designer.cs">
+      <DependentUpon>Services_C.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="AdminPage.Master" />
+    <Content Include="ClientMaster.Master" />
     <None Include="packages.config" />
     <Content Include="SRC\fonts\fontawesome-webfont.eot" />
     <Content Include="SRC\fonts\fontawesome-webfont.ttf" />
@@ -177,6 +245,18 @@
     <Content Include="SRC\fonts\FontAwesome.otf" />
     <Content Include="SRC\fonts\glyphicons-halflings-regular.woff" />
     <Content Include="SRC\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="SRC\assets\webfonts\fa-brands-400.eot" />
+    <Content Include="SRC\assets\webfonts\fa-brands-400.ttf" />
+    <Content Include="SRC\assets\webfonts\fa-brands-400.woff" />
+    <Content Include="SRC\assets\webfonts\fa-brands-400.woff2" />
+    <Content Include="SRC\assets\webfonts\fa-regular-400.eot" />
+    <Content Include="SRC\assets\webfonts\fa-regular-400.ttf" />
+    <Content Include="SRC\assets\webfonts\fa-regular-400.woff" />
+    <Content Include="SRC\assets\webfonts\fa-regular-400.woff2" />
+    <Content Include="SRC\assets\webfonts\fa-solid-900.eot" />
+    <Content Include="SRC\assets\webfonts\fa-solid-900.ttf" />
+    <Content Include="SRC\assets\webfonts\fa-solid-900.woff" />
+    <Content Include="SRC\assets\webfonts\fa-solid-900.woff2" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
