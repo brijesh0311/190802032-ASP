@@ -29,11 +29,15 @@
     <div class="log-w3">
     <div class="w3layouts-main">
 	    <h2>Sign In Now</h2>
-		    <form id="form2" runat="server">
+		    <form id="form1" runat="server">
 			    
                 
-                <asp:TextBox ID="TextBox1" runat="server" type="email" class="ggg" name="Email" placeholder="E-MAIL" TextMode="Email" required=""></asp:TextBox> 
-                <asp:TextBox ID="TextBox2" runat="server" type="password" class="ggg" name="Password" placeholder="PASSWORD" TextMode="Password" required=""></asp:TextBox>
+                <asp:TextBox ID="TextBox1" runat="server" type="email" class="ggg" name="Email" placeholder="E-MAIL" TextMode="Email"></asp:TextBox> 
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Please Enter Username." ControlToValidate="TextBox1" Display="Dynamic" ForeColor="#FF3300"></asp:RequiredFieldValidator>
+
+                <asp:TextBox ID="TextBox2" runat="server" type="password" class="ggg" name="Password" placeholder="PASSWORD" TextMode="Password"></asp:TextBox>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="Please Enter Password." ControlToValidate="TextBox2" Display="Dynamic" ForeColor="#FF3300"></asp:RequiredFieldValidator>
+                
                 <span><input type="checkbox" />Remember Me</span>
 			    
                 <h6><a href="#">Forgot Password?</a></h6>

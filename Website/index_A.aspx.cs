@@ -9,9 +9,16 @@ namespace Website
 {
     public partial class WebForm1 : System.Web.UI.Page
     {
-        protected void Page_Load(object sender, EventArgs e)
-        {
-
-        }
+        //protected void Page_Load(object sender, EventArgs e)
+        //{
+        //    if (IsPostBack)
+        //    {
+        //        Response.Redirect("~/REGISTRATION.aspx");
+        //    }
+        //    else
+        //    {
+        //        Response.Redirect("~/LOGIN.aspx");
+        //    }
+        //}
     }
 }

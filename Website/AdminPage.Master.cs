@@ -11,7 +11,20 @@ namespace Website
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            //if (Session["email"] == null)
+            //{
+            //    Response.Redirect("~/Login.aspx");
+            //}
+            //else
+            //{
+            //    Literal1.Text = Session["email"].ToString();
+            //}
+        }
 
+        protected void LinkButton1_Click(object sender, EventArgs e)
+        {
+            Session["email"] = null;
+            Response.Redirect("~/Login.aspx");
         }
     }
 }

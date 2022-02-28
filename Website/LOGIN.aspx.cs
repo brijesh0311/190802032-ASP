@@ -23,8 +23,8 @@ namespace Website
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            //if (IsValid)
-            //{
+            if (IsValid)
+            {
             SqlCommand cmd = new SqlCommand("SELECT COUNT(*) FROM [users] WHERE [email] = @email AND [password] = @password", con);
             cmd.Parameters.AddWithValue("@email", TextBox1.Text);
             cmd.Parameters.AddWithValue("@password", TextBox2.Text);
@@ -35,7 +35,7 @@ namespace Website
                 Session["email"] = TextBox1.Text;
                 TextBox1.Text = string.Empty;
                 TextBox2.Text = string.Empty;
-                Response.Redirect("~/DASHBOARD.aspx");
+                Response.Redirect("~/HOME_C.aspx");
             }
             else
             {
@@ -44,7 +44,7 @@ namespace Website
 
             }
             con.Close();
-            //}
+           }
         }
     }
 }

@@ -35,6 +35,8 @@
 </head>
 <body>
 
+<form id="form1" runat="server">
+
     <section id="container">
 
     <!--header start-->
@@ -245,16 +247,16 @@
             <li class="dropdown">
                 <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                     <img alt="" src="SRC/images/2.png">
-                    <span class="username">Brijesh Gandhi</span>
+                    <span class="username"><asp:Literal ID="Literal1" runat="server"></asp:Literal></span>
                     <b class="caret"></b>
                 </a>
                
                 <ul class="dropdown-menu extended logout">
                     
-                    <li><a href="#"><i class=" fa fa-suitcase"></i>Profile</a></li>
+                    <%--<li><a href="#"><i class=" fa fa-suitcase"></i>Profile</a></li>
                     <li><a href="#"><i class="fa fa-cog"></i> Settings</a></li>
-                    <li><i class="fa fa-key"><asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/LOGIN.aspx" ForeColor="Black" >Log Out</asp:HyperLink></i></li>
-                    
+                    <li><i class="fa fa-key"><asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/LOGIN.aspx" ForeColor="Black" >Log Out</asp:HyperLink></i></li>--%>
+                    <li><asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click"><i class="fa fa-key">Log Out</i></asp:LinkButton> </li>
                     
 
 
@@ -269,6 +271,7 @@
     </div>
     </header>
     <!--header end-->
+
     <!--sidebar start-->
     <aside>
         <div id="sidebar" class="nav-collapse">
@@ -281,6 +284,7 @@
                             <span>Dashboard</span>
                         </a>
                     </li>
+                     
                 
                     <li class="sub-menu">
                         <a href="javascript:;">
@@ -292,6 +296,12 @@
 						    <li><a href="glyphicon.html">glyphicon</a></li>
                             <li><a href="grids.html">Grids</a></li>
                         </ul>
+                    </li>
+                     <li>
+                        <a href="Manage_users.aspx">
+                            <i class="fa fa-user"></i>
+                            <span>Manage Users </span>
+                        </a>
                     </li>
                     <li>
                         <a href="fontawesome.html">
@@ -372,8 +382,9 @@
         </div>
     </aside>
     <!--sidebar end-->
+
     <!--main content start-->
-        <section id="main-content">
+   <section id="main-content">
         <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server"></asp:ContentPlaceHolder>
     <!-- footer -->
 		  <div class="footer">
@@ -381,10 +392,10 @@
 			  <p>© 2022 Visitors. All rights reserved | Design by BRIJESH</p>
 			</div>
 		  </div>
-  <!-- / footer -->
+    <!-- / footer -->
     </section>
     <!--main content end-->
-</section>
+    </section>
     <script src="SRC/js/bootstrap.js"></script>
     <script src="SRC/js/jquery.dcjqaccordion.2.7.js"></script>
     <script src="SRC/js/scripts.js"></script>
@@ -482,6 +493,6 @@
 	    <!-- //calendar -->
 
 
-    
+</form>    
 </body>
 </html>

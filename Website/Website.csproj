@@ -167,6 +167,7 @@
     <Content Include="Contact_Us_C.aspx" />
     <Content Include="About_Us_C.aspx" />
     <Content Include="Services_C.aspx" />
+    <Content Include="Manage_users.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AdminPage.Master.cs">
@@ -232,6 +233,13 @@
     </Compile>
     <Compile Include="Services_C.aspx.designer.cs">
       <DependentUpon>Services_C.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manage_users.aspx.cs">
+      <DependentUpon>Manage_users.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manage_users.aspx.designer.cs">
+      <DependentUpon>Manage_users.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

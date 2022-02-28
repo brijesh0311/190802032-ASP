@@ -28,22 +28,27 @@
 
     <div class="reg-w3">
     <div class="w3layouts-main">
-		    <form id="form2" runat="server">
+		    <form id="form1" runat="server">
 			    
 	    <h2>Register Now</h2>
 			    
-                <asp:TextBox ID="TextBox1" runat="server" type="text" class="ggg" name="Name" placeholder="NAME" required=""></asp:TextBox>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Please Enter Name." ControlToValidate="TextBox1" Display="Dynamic" ForeColor="Red" SetFocusOnError="True" Width="16px"></asp:RequiredFieldValidator>
 
 			    
-                <asp:TextBox ID="TextBox2" runat="server" type="email" class="ggg" name="Email" placeholder="E-MAIL" required=""></asp:TextBox>
+                <asp:TextBox ID="TextBox1" runat="server" type="text" class="ggg" name="Name" placeholder="NAME"></asp:TextBox>
+
+			    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="Please Enter Email." ControlToValidate="TextBox2" Display="Dynamic" ForeColor="Red" SetFocusOnError="True" Width="16px"></asp:RequiredFieldValidator>
+                <asp:TextBox ID="TextBox2" runat="server" type="email" class="ggg" name="Email" placeholder="E-MAIL"></asp:TextBox>
+
+			    <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ErrorMessage="Please Enter Number." ControlToValidate="TextBox3" Display="Dynamic" ForeColor="Red" SetFocusOnError="True" Width="16px"></asp:RequiredFieldValidator>
+                <asp:TextBox ID="TextBox3" runat="server" type="text" class="ggg" name="Phone" placeholder="PHONE"></asp:TextBox>
 
 			    
-                <asp:TextBox ID="TextBox3" runat="server" type="text" class="ggg" name="Phone" placeholder="PHONE" required=""></asp:TextBox>
-
-			    
-                <asp:TextBox ID="TextBox4" runat="server" type="password" class="ggg" name="Password" placeholder="PASSWORD" required=""></asp:TextBox>
-                <asp:TextBox ID="TextBox5" runat="server" type="password" class="ggg" name="Confirm Password" placeholder="CONFIRM PASSWORD" required=""></asp:TextBox>
-			    <h4><input type="checkbox" />I agree to the Terms of Service and Privacy Policy</h4>
+                <asp:TextBox ID="TextBox4" runat="server" type="password" class="ggg" name="Password" placeholder="PASSWORD"></asp:TextBox>
+                <asp:TextBox ID="TextBox5" runat="server" type="password" class="ggg" name="Confirm Password" placeholder="CONFIRM PASSWORD"></asp:TextBox>
+                <asp:CompareValidator ID="CompareValidator1" runat="server" ErrorMessage="Please Enter Same Password." ControlToCompare="TextBox5" ControlToValidate="TextBox4" Display="Dynamic" ForeColor="Red" SetFocusOnError="True" Width="16px"></asp:CompareValidator>
+                
+                <h4><input type="checkbox" />I agree to the Terms of Service and Privacy Policy</h4>
 			
 				    <div class="clearfix"></div>
 

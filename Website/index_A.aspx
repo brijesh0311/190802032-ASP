@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
 
 		<!--main content start-->
-	<section id="main-content">
+	
 		<section class="wrapper">
 			<!-- //market-->
 			<div class="market-updates">
@@ -376,7 +376,7 @@
 					</div>
 	</section>
 	 
-	</section>
+
 	<!--main content end-->
 
 </asp:Content>
