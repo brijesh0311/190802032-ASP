@@ -46,7 +46,7 @@
 			    
                 <asp:TextBox ID="TextBox4" runat="server" type="password" class="ggg" name="Password" placeholder="PASSWORD"></asp:TextBox>
                 <asp:TextBox ID="TextBox5" runat="server" type="password" class="ggg" name="Confirm Password" placeholder="CONFIRM PASSWORD"></asp:TextBox>
-                <asp:CompareValidator ID="CompareValidator1" runat="server" ErrorMessage="Please Enter Same Password." ControlToCompare="TextBox5" ControlToValidate="TextBox4" Display="Dynamic" ForeColor="Red" SetFocusOnError="True" Width="16px"></asp:CompareValidator>
+                <asp:CompareValidator ID="CompareValidator1" runat="server" ErrorMessage="Please Enter Same Password." ControlToCompare="TextBox4" ControlToValidate="TextBox5" Display="Dynamic" ForeColor="Red" SetFocusOnError="True" Width="16px"></asp:CompareValidator>
                 
                 <h4><input type="checkbox" />I agree to the Terms of Service and Privacy Policy</h4>
 			

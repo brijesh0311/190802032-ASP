@@ -119,6 +119,8 @@
     <Content Include="SRC\css\morris.css" />
     <Content Include="SRC\css\style-responsive.css" />
     <Content Include="SRC\css\style.css" />
+    <Content Include="SRC\delete.png" />
+    <Content Include="SRC\Edit.png" />
     <Content Include="SRC\fonts\fontawesome-webfont.svg" />
     <Content Include="SRC\images\1.png" />
     <Content Include="SRC\images\2.png" />
