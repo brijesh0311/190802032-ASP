@@ -1,4 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/ClientMaster.Master" AutoEventWireup="true" CodeBehind="Services_C.aspx.cs" Inherits="Website.WebForm5" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
 
     <!-- inner banner -->
@@ -28,11 +29,29 @@
     <!-- services block -->
     <section class="home-about-w3l pt-lg-5 pb-5" id="features">
         <div class="container py-md-5 py-4">
-            <div class="title-heading-w3 text-center mx-auto mb-4" style="max-width:500px;">
+            <div class="title-heading-w3 text-center mx-auto mb-4" style="max-width: 500px;">
                 <h3 class="title-style">Services We're offering</h3>
             </div>
             <div class="row align-items-center">
-                <div class="col-lg-4 col-sm-6">
+                <asp:Repeater ID="Repeater1" runat="server">
+                    <ItemTemplate>
+                        <div class="col-lg-4 col-sm-6">
+                            <div class="grids-1">
+                                <div class="icon-style">
+                                    <i class="fas fa-chart-pie"></i>
+                                </div>
+                                <h4 class="title-head mb-2"><a href="about.html">
+                                    <asp:Label ID="Label1" runat="server" Text='<%# Eval("Title") %>'></asp:Label></a></h4>
+                                <p>
+                                    <asp:Label ID="Label2" runat="server" Text='<%# Eval("Description") %>'></asp:Label>
+                                </p>
+                                <a href="about.html" class="btn btn-style btn-style-primary mt-4">Read More<i
+                                    class="fas fa-arrow-right ms-1"></i></a>
+                            </div>
+                        </div>
+                    </ItemTemplate>
+                </asp:Repeater>
+                <%--<div class="col-lg-4 col-sm-6">
                     <div class="grids-1">
                         <div class="icon-style">
                             <i class="fas fa-chart-pie"></i>
@@ -103,7 +122,7 @@
                         <a href="about.html" class="btn btn-style btn-style-primary mt-4">Read More<i
                                 class="fas fa-arrow-right ms-1"></i></a>
                     </div>
-                </div>
+                </div>--%>
             </div>
         </div>
     </section>
@@ -112,7 +131,7 @@
     <!-- content block -->
     <section class="w3l-covers-14 w3l-covers-14-2 text-center py-5">
         <div class="container py-md-5 py-4 my-lg-5 my-4">
-            <div class="covers14-text text-center mx-auto pt-lg-5 pb-lg-5 pb-4" style="max-width:700px">
+            <div class="covers14-text text-center mx-auto pt-lg-5 pb-lg-5 pb-4" style="max-width: 700px">
                 <h3 class="title-style text-white">Ready to get started but not sure where to begin?<br>
                     <span>Let’s figure it out together.</span></h3>
             </div>
@@ -124,7 +143,7 @@
     <!-- pricing block -->
     <section class="pricing-w3l pt-5 pb-4">
         <div class="container pt-md-5 pt-4">
-            <div class="title-heading-w3 text-center mx-auto mb-md-5 mb-4 pb-md-1" style="max-width:500px;">
+            <div class="title-heading-w3 text-center mx-auto mb-md-5 mb-4 pb-md-1" style="max-width: 500px;">
                 <h3 class="title-style">Pick the right plan!</h3>
             </div>
             <div class="row no-gutters pt-4">
@@ -132,11 +151,11 @@
                     <h3 class="text-price">Standard</h3>
                     <h4>$0<span>per month</span></h4>
                     <ul>
-                        <li><i class="fas fa-check-circle"></i> Basic website checkup</li>
-                        <li><i class="fas fa-check-circle"></i> SEO recommendations</li>
-                        <li><i class="fas fa-check-circle"></i> Google Ads basic plan</li>
-                        <li class="na"><span><i class="fas fa-check-circle"></i> Social Media plan</span></li>
-                        <li class="na"><span><i class="fas fa-check-circle"></i> Company & Business Setup</span></li>
+                        <li><i class="fas fa-check-circle"></i>Basic website checkup</li>
+                        <li><i class="fas fa-check-circle"></i>SEO recommendations</li>
+                        <li><i class="fas fa-check-circle"></i>Google Ads basic plan</li>
+                        <li class="na"><span><i class="fas fa-check-circle"></i>Social Media plan</span></li>
+                        <li class="na"><span><i class="fas fa-check-circle"></i>Company & Business Setup</span></li>
                     </ul>
                     <a href="#button" class="btn btn-style mt-4">Get Started</a>
                 </div>
@@ -145,11 +164,11 @@
                     <h3 class="text-price">Popular</h3>
                     <h4>$29<span>per month</span></h4>
                     <ul>
-                        <li><i class="fas fa-check-circle"></i> Basic website checkup</li>
-                        <li><i class="fas fa-check-circle"></i> SEO recommendations</li>
-                        <li><i class="fas fa-check-circle"></i> Google Ads basic plan</li>
-                        <li><i class="fas fa-check-circle"></i> Social Media plan</li>
-                        <li class="na"><span><i class="fas fa-check-circle"></i> Company & Business Setup</span></li>
+                        <li><i class="fas fa-check-circle"></i>Basic website checkup</li>
+                        <li><i class="fas fa-check-circle"></i>SEO recommendations</li>
+                        <li><i class="fas fa-check-circle"></i>Google Ads basic plan</li>
+                        <li><i class="fas fa-check-circle"></i>Social Media plan</li>
+                        <li class="na"><span><i class="fas fa-check-circle"></i>Company & Business Setup</span></li>
                     </ul>
                     <a href="#button" class="btn btn-style btn-style-2 mt-4">Get Started</a>
                 </div>
@@ -158,11 +177,11 @@
                     <h3 class="text-price">Premium</h3>
                     <h4>$49<span>per month</span></h4>
                     <ul>
-                        <li><i class="fas fa-check-circle"></i> Basic website checkup</li>
-                        <li><i class="fas fa-check-circle"></i> SEO recommendations</li>
-                        <li><i class="fas fa-check-circle"></i> Google Ads basic plan</li>
-                        <li><i class="fas fa-check-circle"></i> Social Media plan</li>
-                        <li><i class="fas fa-check-circle"></i> Company & Business Setup</li>
+                        <li><i class="fas fa-check-circle"></i>Basic website checkup</li>
+                        <li><i class="fas fa-check-circle"></i>SEO recommendations</li>
+                        <li><i class="fas fa-check-circle"></i>Google Ads basic plan</li>
+                        <li><i class="fas fa-check-circle"></i>Social Media plan</li>
+                        <li><i class="fas fa-check-circle"></i>Company & Business Setup</li>
                     </ul>
                     <a href="#button" class="btn btn-style mt-4">Get Started</a>
                 </div>

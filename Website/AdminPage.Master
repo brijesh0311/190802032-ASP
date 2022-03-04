@@ -304,6 +304,12 @@
                         </a>
                     </li>
                     <li>
+                        <a href="Manage_services.aspx">
+                            <i class="fa fa-server"></i>
+                            <span>Manage Services </span>
+                        </a>
+                    </li>
+                    <li>
                         <a href="fontawesome.html">
                             <i class="fa fa-bullhorn"></i>
                             <span>Font awesome </span>

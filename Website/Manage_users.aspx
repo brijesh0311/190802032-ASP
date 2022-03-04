@@ -11,7 +11,7 @@
                 <div class="col-lg-12">
                     <section class="panel">
                         <header class="panel-heading">
-                            Basic Forms
+                            Manage Users
                         </header>
                         <div class="panel-body">
                             <div class="position-center">
@@ -47,7 +47,7 @@
                                     <div>
                                     <%--<button type="submit" class="btn btn-info">Submit</button>--%>
                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    
-                                    <asp:Button ID="Button1" runat="server" Text="Upadate" class="btn btn-info" OnClick="Button1_Click" />
+                                    <asp:Button ID="Button1" runat="server" Text="Submit" class="btn btn-info" OnClick="Button1_Click" />
                                     </div>
                                 <div class="checkbox">
                                     <asp:Literal ID="Literal1" runat="server"></asp:Literal>
