@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/AdminPage.Master" AutoEventWireup="true" CodeBehind="Manage_services.aspx.cs" Inherits="Website.WebForm7" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/AdminPage.Master" AutoEventWireup="true" CodeBehind="Manage_services.aspx.cs" Inherits="Website.WebForm7" EnableEventValidation="false"  %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
 
     
@@ -67,6 +67,16 @@
                                                 <asp:TemplateField HeaderText="Status">
                                                     <ItemTemplate>
                                                         <asp:Literal ID="Literal11" runat="server" Text='<%# Eval("status") %>'></asp:Literal>
+                                                    </ItemTemplate>
+                                                </asp:TemplateField>
+                                                <asp:TemplateField HeaderText="DELETE">
+                                                    <ItemTemplate>
+                                                        <asp:ImageButton ID="ImageButton1" runat="server" CommandArgument='<%# Eval("service_Id") %>' Height="50px" ImageUrl="~/SRC/delete.png" OnClick="ImageButton1_Click" OnClientClick="return confirm('Are You sure ?')" Width="50px" />
+                                                    </ItemTemplate>
+                                                </asp:TemplateField>
+                                                <asp:TemplateField HeaderText="EDIT">
+                                                    <ItemTemplate>
+                                                        <asp:ImageButton ID="ImageButton3" runat="server" CommandArgument='<%# Eval("service_Id") %>' Height="40px" ImageUrl="~/SRC/Edit.png" OnClick="ImageButton3_Click" Width="40px" />
                                                     </ItemTemplate>
                                                 </asp:TemplateField>
                                             </Columns>
